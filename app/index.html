@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Venn/Meme</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+            <div class="page-header"><h1>Venn-Meme generator</h1></div>
+            <div class="row">
+                <div id="venn-diagram" class="col-sm-9">
+                    <svg width="610" height="610">
+                        <circle id="circleA" style='fill:#999;fill-opacity:0.5' cx="205" cy="205" r="200" fill="none" stroke="#000"></circle>
+                        <circle id="circleB" style='fill:#999;fill-opacity:0.5' cx="405" cy="205" r="200" fill="none" stroke="#000"></circle>
+                        <circle id="circleC" style='fill:#999;fill-opacity:0.5' cx="305" cy="405" r="200" fill="none" stroke="#000"></circle>
+                    </svg>
+                    <div class="chart-label level1" id="textA"><div>A</div></div>
+                    <div class="chart-label level1" id="textB"><div>B</div></div>
+                    <div class="chart-label level1" id="textC"><div>C</div></div>
+                    <div class="chart-label level2" id="textAB"><div>AB</div></div>
+                    <div class="chart-label level2" id="textAC"><div>AC</div></div>
+                    <div class="chart-label level2" id="textBC"><div>BC</div></div>
+                    <div class="chart-label level3" id="textABC"><div>ABC</div></div>
+                </div>
+
+                <div id="editor" class="col-sm-3">
+                    <div class="container">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group"><label class="col-sm-1 control-label">A:</label>
+                                 <div class="col-sm-3"><input class="form-control" data-for="textA" type="text"/></div></div>
+                            <div class="form-group"><label class="col-sm-1 control-label">B:</label>
+                                 <div class="col-sm-3"><input class="form-control" data-for="textB" type="text"/></div></div>
+                            <div class="form-group"><label class="col-sm-1 control-label">C:</label>
+                                 <div class="col-sm-3"><input class="form-control" data-for="textC" type="text"/></div></div>
+                            <div class="form-group"><label class="col-sm-1 control-label">AB:</label>
+                                 <div class="col-sm-3"><input class="form-control" data-for="textAB" type="text"/></div></div>
+                            <div class="form-group"><label class="col-sm-1 control-label">AC:</label>
+                                 <div class="col-sm-3"><input class="form-control" data-for="textAC" type="text"/></div></div>
+                            <div class="form-group"><label class="col-sm-1 control-label">BC:</label>
+                                 <div class="col-sm-3"><input class="form-control" data-for="textBC" type="text"/></div></div>
+                            <div class="form-group"><label class="col-sm-1 control-label">ABC:</label>
+                                 <div class="col-sm-3"><input class="form-control" data-for="textABC" type="text"/></div></div>
+                            <button id="save" class="btn btn-primary">Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/html2canvas/dist/html2canvas.js"></script>
+        <script src="../bower_components/FileSaver/FileSaver.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="../bower_components/bootstrap/js/affix.js"></script>
+        <script src="../bower_components/bootstrap/js/alert.js"></script>
+        <script src="../bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="../bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="../bower_components/bootstrap/js/modal.js"></script>
+        <script src="../bower_components/bootstrap/js/transition.js"></script>
+        <script src="../bower_components/bootstrap/js/button.js"></script>
+        <script src="../bower_components/bootstrap/js/popover.js"></script>
+        <script src="../bower_components/bootstrap/js/carousel.js"></script>
+        <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="../bower_components/bootstrap/js/collapse.js"></script>
+        <script src="../bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

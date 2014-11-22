@@ -1,0 +1,109 @@
+/*
+ * Alef Hebrew (Hebrew) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Alef Hebrew';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/alefhebrew/v4/Alef-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/alefhebrew/v4/Alef-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/alefhebrew/v4/Alef-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/alefhebrew/v4/Alef-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/alefhebrew/v4/Alef-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Alef Hebrew';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/alefhebrew/v4/Alef-Bold.eot);
+  src: url(//fonts.gstatic.com/ea/alefhebrew/v4/Alef-Bold.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/alefhebrew/v4/Alef-Bold.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/alefhebrew/v4/Alef-Bold.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/alefhebrew/v4/Alef-Bold.ttf) format('truetype');
+}
+
+body{
+  font-family: "Alef Hebrew",
+               "Helvetica Neue",
+               Helvetica,
+               Arial,
+               sans-serif;
+}
+
+#venn-diagram {
+    width:650px;
+    background: white;
+    position:relative;
+}
+
+#venn-diagram circle {
+    stroke-width:2px;
+    stroke: black;
+}
+
+.chart-label {
+    position:absolute;
+    margin-left:-50px;
+}
+
+.chart-label div {
+    height:auto;
+    position: absolute;
+    top: 50%;
+    width:100%;
+    transform: translate(0, -50%);
+    text-align:center;
+}
+
+.chart-label.level1 {
+    width:150px;
+    height:150px;
+    font-size:2.3em;
+}
+
+.chart-label.level2 {
+    width:100px;
+    height:100px;
+    font-size:1.3em;
+}
+
+.chart-label.level3 {
+    width:125px;
+    height:125px;
+    font-size:3em;
+}
+
+#textA {
+    left:104px;
+    top:91px;
+}
+
+#textB {
+    left:474px;
+    top:91px;
+}
+
+#textC {
+    left:289px;
+    top:423px;
+}
+
+#textAB {
+    left:314px;
+    top:89px;
+}
+
+#textAC {
+    left:191px;
+    top:294px;
+}
+
+#textBC {
+    left:438px;
+    top:294px;
+}
+
+#textABC {
+    left:304px;
+    top:207px;
+}
